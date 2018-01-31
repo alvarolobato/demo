@@ -14,4 +14,9 @@ public class GreetingController {
         return "greeting";
     }
 
+    @RequestMapping("/health")
+    public String health(){
+        return "OK";
+    }
+
 }
