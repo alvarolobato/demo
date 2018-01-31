@@ -14,6 +14,9 @@ pipeline {
     stage('Build Release') {
       steps {
         container('maven') {
+
+          sh "export"
+          
           // ensure we're not on a detached head
           sh "git checkout master"
 
